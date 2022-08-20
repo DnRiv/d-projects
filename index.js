@@ -12,11 +12,11 @@ var dayValue = selectList.selectedIndex;
 
 let todos = [];
 let lists = [
-    {id: uuid(), text: 'Lunes', count: 0},
-    {id: uuid(), text: 'Martes', count: 0},
-    {id: uuid(), text: 'Miércoles', count: 0},
-    {id: uuid(), text: 'Jueves', count: 0},
-    {id: uuid(), text: 'Viernes', count: 0}
+    {id: uuid(), text: 'Monday', count: 0},
+    {id: uuid(), text: 'Tuesday', count: 0},
+    {id: uuid(), text: 'Wednesday', count: 0},
+    {id: uuid(), text: 'Thursday', count: 0},
+    {id: uuid(), text: 'Friday', count: 0}
 ];
 
 document.addEventListener('DOMContentLoaded', e =>{
@@ -123,18 +123,18 @@ function refreshUI(){
     renderTodos();
     renderLists();
 
-    listFilter('Lunes',hide,0);
+    listFilter('Monday',hide,0);
 
     if(d=== 0){
-        listFilter('Lunes',hide,0);
+        listFilter('Monday',hide,0);
     }if(d=== 1){
-        listFilter('Martes',hide,1);
+        listFilter('Tuesday',hide,1);
     }if(d=== 2){
-        listFilter('Miércoles',hide,2);
+        listFilter('Wednesday',hide,2);
     }if(d=== 3){
-        listFilter('Jueves',hide,3);
+        listFilter('Thursday',hide,3);
     }if(d=== 4){
-        listFilter('Viernes',hide,4);
+        listFilter('Friday',hide,4);
     }  
 }
 
@@ -211,24 +211,24 @@ function listFilter (day,act,arrDay){
         }};
 }
 
-lunesButton.addEventListener('click',()=>{
-    listFilter('Lunes',hide,0);
+mondayButton.addEventListener('click',()=>{
+    listFilter('Monday',hide,0);
 });
 
-martesButton.addEventListener('click',()=>{
-    listFilter('Martes',hide,1);
+tuesdayButton.addEventListener('click',()=>{
+    listFilter('Tuesday',hide,1);
 });
 
-miercolesButton.addEventListener('click',()=>{
-    listFilter('Miércoles',hide,2);
+wednesdayButton.addEventListener('click',()=>{
+    listFilter('Wednesday',hide,2);
 });
 
-juevesButton.addEventListener('click',()=>{
-    listFilter('Jueves',hide,3);
+thursdayButton.addEventListener('click',()=>{
+    listFilter('Thursday',hide,3);
 });
 
-viernesButton.addEventListener('click',()=>{
-    listFilter('Viernes',hide,4);
+fridayButton.addEventListener('click',()=>{
+    listFilter('Friday',hide,4);
 });
 
 selectList.addEventListener('change',()=>{

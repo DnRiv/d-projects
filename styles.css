@@ -60,7 +60,7 @@ main{
     margin: 3px;
     padding-bottom: 3px;
     justify-content:left;
-    width: 105px;
+    width: 120px;
     border-radius: 30px;
     text-align:left;
 }
@@ -114,19 +114,19 @@ h3{
 }
 
 
-form i:active {
+form i:active{
     background-color:aliceblue;
     text-shadow: 0 1px #666;
     transform: translateY(1px);
     cursor: pointer;
 }
 
-form i {
+form i{
     padding-left: 10px;
     cursor: pointer;
 }
 
-.todo {
+.todo{
     align-items: center;
     background-color: #fafafb;
     border-radius: 30px;
